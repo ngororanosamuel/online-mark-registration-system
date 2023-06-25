@@ -1,0 +1,23 @@
+table,
+tr,
+th,
+td {
+    border: 1px solid;
+    border-collapse: collapse;
+    border-width: 5px;
+    text-transform: capitalize;
+}
+
+table{
+    width: 80%;
+    font-family: sans-serif;
+    padding: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+tr,td,th{
+    padding: 15px;
+}

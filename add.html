@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="add.css">
+    <script src="added.js"></script>
+</head>
+
+<body>
+    <input type="number" id="number" placeholder="insert number"><br><br>
+    <input type="text" id="names" placeholder="insert student name"><br><br>
+    <input type="text" id="marks" placeholder="insert marks"><br><br>
+    <button onclick="add()">submit</button>
+    <table>
+        <tr>
+            <th>No</th>
+            <th>student name</th>
+            <th>marks</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>esther</td>
+            <td>75</td>
+        </tr>
+    </table>
+    <script>
+        let table = document.querySelector("table")
+        let number = document.getElementById("number")
+        let names = document.getElementById("names")
+        let marks = document.getElementById("marks")
+        // console.log(table);
+
+        function add() {
+            table.innerHTML += `
+            <tr>
+                <td>${number.value}</td>
+                <td>${names.value}</td>
+                <td>${marks.value}</td>
+            </tr>
+            `
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+.container {
+    font-family: sans-serif;
+    user-select: none;
+}
+
+.heading {
+    width: 100%;
+    /* padding: 10px; */
+    border-bottom: 1px solid #aaa;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.back button {
+    border: none;
+    background: #ffbb98;
+    padding: 15px;
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sub-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+table {
+    width: 90%;
+    margin-top: 50px;
+
+}
+
+tr {
+    padding: 10px;
+}
+
+tr,
+th,
+td {
+    background: #aaaaaa5e;
+    padding: 20px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+td {
+    background: whitesmoke;
+}
+
+.total {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.addoption>button {
+    width: 150px;
+    border: none;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.addoption>button:hover {
+    background: #ffbb98;
+}
+
+@media (max-width:250px) {
+    .container {
+        width: 100%;    
+    }
+}
+
+h1 {
+    font-size: 15px;
+}
